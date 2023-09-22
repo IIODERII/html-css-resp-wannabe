@@ -130,4 +130,39 @@ img {
 
 /* media query */
 
+@media screen and (max-width: 768px){
 
+    .container{
+        max-width: 750px;
+        width: auto;
+    }
+
+    .why-us .col-left img{       
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .row{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .lessons .col , .steps .col , .why-us .col{
+        min-width: 180px;
+        width: 100%;
+    }
+
+    .steps{
+        margin-bottom: 0;
+    }
+
+    .why-us{
+        padding: 48px 0;
+        margin-bottom: 0;
+        background-color: #222222;
+    }
+}
